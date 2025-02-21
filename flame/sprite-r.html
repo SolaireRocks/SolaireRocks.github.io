@@ -1,0 +1,394 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<style type="text/css">
+		<!--
+			td	{
+				font-size:small;
+				}
+			td#large	{
+				font-size:medium;
+				}
+			a#siro:link	{	color:#ffffff;	}
+			a#siro:visited	{	color:#ffffff;	}
+			a#siro:active	{	color:#bbffbb;	}
+		-->
+body,td,th {font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;font-size:14px;}
+	</style>
+
+<script Language=javascript>
+<!--
+function show(inputData) {
+var objID=document.getElementById( "layer_" + inputData );
+var buttonID=document.getElementById( "category_" + inputData );
+if(objID.className=='close') {
+objID.style.display='block';
+objID.className='open';
+}else{
+objID.style.display='none';
+objID.className='close';
+}
+}
+//-->
+</script>
+
+</head>
+
+<body>
+<a name="top">　</a><br>
+<FONT SIZE="5" COLOR="#323232">About Character Images (キャラクター画像について)</FONT><br>
+<HR color="blue">
+<br>
+
+<DIV ALIGN="right">Last Updated: 2/5/2021</DIV>
+<DIV ALIGN="right">Version: 2.9.4<br>EX： 1.6.3</DIV>
+
+<br>
+<a name="1">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>1. Introduction</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+The battle sprites for Final Fantasy 6 can have various different editing changes based on exactly what you want to do. "I want to change Terra's chanting magic pose", "I want to create a new Shadow sprite from an existing one", "I want to add in my own original sprite", etc.<br>
+<br>
+There's a specific program available to create or edit sprites. I'll explain below how to create them with this program. (<a HREF="#7" STYLE="text-decoration:none">7. Changing Menu Screen Portraits</a>) Please use this link to review the process.
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="2">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>2. Changing the Default Sprites</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+If you wish to edit the original sprites in FF6 the program <B>YY-CHR</B> may be a good choice.<br><br>
+Firstly, open the ROM in <B>YY-CHR</B> and display the address for the image you wish to edit. Character sprites can be separated into <B>Field</B> and <B>Battle</B>. In the original game there was only one set of sprites used, however in FF6 T-Edition there are 2 sets I have to mess with. For more details please check (<a HREF="#6" STYLE="text-decoration:none">6. FF6 Specifications</a>).<br>
+<br>
+In both the original game and FF6 T-Edition character images are located at address <B>150000～</B>. However, since the address of FF6 T-Edition is different depending on the character, please use the BNE 2 settings file attached with the files downloaded here and open the sprite tab on BNE 2.<br>
+<br>
+Character sprites are displayed, but the colors are messed up and it's extremely annoying. The files <B>FF6 T-Edition character palettes.pal</B> and <B>original ff6 character palettes.pal</B> are included in the attached "For Producers" folder so please use them by opening the Palette>RGB Palette (*.pal) in the upper menu. Please use the one necessary for whatever you're doing.<br><br>
+In the lower right part of the palette select what color fits that specific character that you'd like. Doing this will make it appear in the same color as in the game so it'll be easier to edit.<br>
+<br>
+<center><IMG SRC="img/1.png" STYLE="margin-right:10px;"></center>
+<br>
+For detailed use in using <B>YY-CHR</B> please refer to the attached "Readme" file.
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="3">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>3. Making New Sprites From Existing Ones</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+It's strongly recommended you use <b>FF3usME</b> rather than YY-CHR if you wish to change all of the character's sprite instead of just part of it, such as making Terra into Aerith.<br><br>
+This program is used for the English version of FF6, however, it can still be used with the Japanese version as well. Like FF6 T-Edition <b><font COLOR="red">it can't be used with other expanded ROMs of FF6 due to each sprite address having been changed</font></b>, so be careful. If you want to overwrite images in the expanded ROM you can create an image using the original FF6 ones, then copy/paste it over using <B>YY-CHR</B>.<br>
+<br>
+Although it's an English program I believe you can still understand and use it with ease. Click on the <B>Gfx</B> icon with the picture of Relm then begin editing the sprite.<br>
+<br>
+This tool is very easy to use, however, some people may feel like editing is a pain until they get use to it. Also, sometimes freezing happens and that causes problems. <B>FF3usME</B> can input and output images so go ahead and export an image (via the Export button), then edit it with a pixel-editing program like <B>EDGE</B>, then go ahead and input it back in (via the Import button).<br><br>
+Please note that there are some places where the output images are shared, mirroring the left/right of a sprite, so take care when editing.<br>
+<br>
+<center><IMG SRC="img/2.png" STYLE="margin-right:10px;"></center>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="4">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>4. Changing Colors</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+When you wish to change the color of FF6's sprites it's a lot of work and may become difficult. A detailed explanation can be found in this section (<a HREF="#6" STYLE="text-decoration:none">6. FF6 Specifications</a>), so please refer to it for more information.<br><br>
+There's 8 different kinds of color palettes separated into field, battle, and portrait sprites. The palettes for field images is 268000, the original FF6's are 2D6300, and FF6 T-Edition is 3EF000.<br>
+<br>
+When changing the colors of the original palette it's important to check and see which characters share the same one. For example if you change Celes's hair to blue it will also make Edgar, Sabin, and Leo's hair blue as well.<br>
+<br>
+<center><IMG SRC="img/3.png" STYLE="margin-right:10px;"></center>
+<br>
+<br>
+If you decide to change the palette instead of the colors, for example, swap Terra from Palette 02 to Palette 00, you have to check and edit events.<br><br>
+In the case of playable characters the palette is basically specified at the time they first appear and for NPCs it's based on each map. In Terra's case her palette is set during the opening event.<br><br>
+The event command that specifies the palette of the character is [43], the XX is the character ID, and YY is the palette [43 XX YY = XX]. Since Terra is 00 and her palette is 02, it becomes <B>43 00 02</B>, but if you change her palette to <B>43 00 00</B>, she becomes blonde haired Terra instead of green.<br><br>
+In a binary editor such as the program <B>Stirling</B>, to find out what character and palette is specified at which part in the game, you need to research for yourself. I highly advise against changing the playable character's palettes as this can crash the game if you're not careful and know what you're doing.<br>
+<br>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="5">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>5. Replacing Images</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+When you replace the created images with the above #1-4 etc, if it was edited in <B>FF3usME</B>, in the case of the original FF6, it will only change if you save. When you're editing the image output by FF3usME enter it back in via Import and save.<br><br>
+
+FF3usME can't be used if the ROM has been expanded for FF6 due to the image addresses being changed; this is the case for FF6 T-Edition. In this case, I recommend you copy/paste the replaced image from the original FF6 into the expanded ROM using the program YY-CHR after you've edited it in FF3usME.
+<br>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="6">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>6. FF6 Specifications</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+
+<FONT SIZE="3"><B>1. Character images can be set separately for either field or battle.</B></FONT><br>
+In the original FF6 field and battle use the same sets of images, however, they can still be set separately. For example you could make Celes appear in the field, but in battle Leo will take her place.<br>
+<br>
+<FONT SIZE="3"><B>2. The character ID that is used for battle is 55 (=85).</B></FONT><br>
+In the case of FF6 T-Edition's "Dressing Room" when you change the character's sprite by changing the character ID, if it's changed to ID 56 or above it won't work properly.<br>
+<br>
+<FONT SIZE="3"><B>3. Addressing images used during Chocobo riding.</B></FONT><br>
+In the original FF6 if you ever tried riding a Chocobo with Banon the sprite wouldn't be displayed properly (this was fixed in later versions after SNES). This is due to the graphics for Chocobo riding being programmed with <B><font COLOR="red">150180 16A0 byte incriments</font></B>.<br><br>
+The 150180 number is what represents the graphic used for Terra. The number of bytes next leading to Locke's graphic is 16A0, followed with Cyan, Shadow, etc. However, in the case of Leo, Banon, and Kefka, they don't have as many sprites, so it's less than 16A0 bytes. Due to this Banon's chocobo riding sprites are not displayed properly.<br>
+<br>
+<FONT SIZE="3"><B>4. There's 8 different types of palettes to use for characters.</B></FONT><br>
+For PC and NPCs the method of specifying the field sprites is to check the event command for each NPC's data, however, there's 8 different palettes that can be used.<br><br>
+In the original FF6 game the below image shows a breakdown of the palette:<br>
+<br>
+<center><IMG SRC="img/4.png" STYLE="margin-right:10px;"></center>
+<br>
+Among these there are 6 you can use (0-5) for PCs. The reason for you being unable to use 6 and 7 is due to those palettes not being compatible with save/store/character selection screens.<br>
+<br>
+<FONT SIZE="3"><B>5. About color changes for battle.</B></FONT><br>
+One thing you must keep in mind and be made aware of is battle sprites have color changes during battle. To be more specific the outer line of characters glows from effects such as Haste, Protect, etc, and their skin tone changes due to Poison, Zombie, etc.<br><br>
+These change the colors of the specified number on the palette:<br>
+<br>
+<center><IMG SRC="img/5.png" STYLE="margin-right:10px;"></center>
+<br>
+#1 is what's used for the outline of magical effects around the character and #2 and #3 are what's used for skin color changes like Poison, Zombie, etc.<br><br>
+Please note if you use the skin color for clothing or draw black outlines around your eyes this will make them change color with the above. Personally I don't think it's super noticible, so please don't worry too much.<br>
+<br>
+<FONT SIZE="3"><B>6. There's 12 total colors available for battle sprites.</B></FONT><br>
+The total number of colors usable for battle sprites isn't 16 actually, but <B><font COLOR="red">12</font></B>. Out of the 16 colors 4 are masked via the system colors used (finger cursor, damage font color, etc).<br><br>
+In FF6 T-Edition I've added 4 colors by adding different images with different color arrangements for battle. This doesn't mean you can use all 16 colors, just that you can choose 12 from the 16 at your leisure and preference.<br>
+<br>
+<FONT SIZE="3"><B>7. A special NPC has a palette specified via an event command.</B></FONT><br>
+Some NPCs use colors beyond the 8 different palette choices mentioned above. For example Dadaluma uses #13 and Odin uses #15.<br><br>
+For this method palettes besides the 8 from 0-7 are specified by the event command. How this works is a trigger is used by the event command that allocates the 7th palette (that's not technically used) to a XX number.<br><br>
+For maps that use two different exception palettes on the same map, palettes #6 and 7 are allocated (example: the Magitek Research Facility where the Crane uses palette 12 and Guardian uses palette 10).<br>
+<br>
+<FONT SIZE="3"><B>8. The 4 other colors of palettes 4 and 5 are not displayed correctly on the save menu, etc.</B></FONT><br>
+Just like you may do with FF6 T-Edition, if you make a battle sprite with a different color set up, you can use the last 4 characters even with the default. However, the characters of palettes 4 and 5 (Cyan, Shadow, Setzer, Mog, and Umaro) will not properly use colors correctly on the save/store/character select screens using these 4 colors. This is due to the last 4 colors of palette 4 being temporarily overwritten by the color of the status ailment on the menu screen and the last 4 colors of palette 5 being used for the color of the cursor.<br>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<a name="7">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>7. Changing Menu Screen Portraits</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+If you want to change the portraits on the menu screen you can easily do this with the programs <b>FF3se</b> and <b>YY-CHR</b>.<br><br>
+However, <b>FF3se</b> can only be used for certain headers due to being an English program. To use the original Japanese FF6 without headers you must <b><font COLOR="red">fill the first 200 bytes with 00</font></b>.<br>
+<br>
+The portrait specifications are <b><font COLOR="red">40×40</font></b> and the number of colors are <b><font COLOR="red">16</font></b>. One palette can be set per image.<br>
+<br>
+<center><IMG SRC="img/6.png" STYLE="margin-right:10px;"></center>
+<br>
+When opening the ROM the image displayed on the right side may appear black, however, if you specify the palette it'll appear as normal.<br><br>
+You can edit the images with <b>FF3se</b> as is, as well as import and export the images after editing with image editing software and the like.<br>
+<br>
+If you're editing sprites from the original FF6 game then your work is done. However, in the examples of expanded ROMs or FF6 T-Edition, once you edit the sprites you can use the program <b>YY-CHR</b> to change them and you'll need a binary editor to swap/move the palettes.
+
+
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+<a name="8">　</a>
+<table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
+<tr>
+<td width="100%">
+<font SIZE="4"><B>8. Tools</B></font>
+</td>
+</tr>
+</table>
+
+<table border=0 width=820 align=center CELLPADDING="10">
+<tr>
+<td width="100%" align=left>
+<span STYLE="letter-spacing:2px; line-height:20px;">
+The following are useful programs for editing character images.<br>
+<br>
+<FONT SIZE="3"><B>YY-CHR</B></FONT><br>
+This is a program that can browse and edit images used in NES and SNES.<br>
+This can also be used not only for character images, but also magic effects and monster images.<br>
+<br>
+<DIV ALIGN="right">わいわいの巣（<A HREF="http://www.geocities.jp/yy_6502/">http://www.geocities.jp/yy_6502/</A>）</DIV>
+<br>
+<FONT SIZE="3"><B>Stirling</B></FONT><br>
+An easy-to-use binary editor.<br>
+It's excellent to use when referring to event contents and other things, even with graphics.<br>
+<br>
+<DIV ALIGN="right">Vector - Stirling（<A HREF="http://www.vector.co.jp/soft/win95/util/se079072.html">http://www.vector.co.jp/soft/win95/util/se079072.html</A>）</DIV>
+<br>
+<FONT SIZE="3"><B>BNE2</B></FONT><br>
+A program used to display fixed-length data in a table.<br>
+You can browse various data using the attached FF6 T-Edition and original FF6 settings files in the FF binary shared folder.<br>
+<br>
+<DIV ALIGN="right">永久UnderConstruction（<A HREF="http://www.geocities.jp/to_546/">http://www.geocities.jp/to_546/</A>）</DIV>
+<br>
+<FONT SIZE="3"><B>EDGE2</B></FONT><br>
+A very high-quality pixel editor.<br>
+<br>
+<DIV ALIGN="right">TAKABOSOFT - EDGE2（<A HREF="http://takabosoft.com/edge2">http://takabosoft.com/edge2</A>）</DIV>
+<br>
+<FONT SIZE="3"><B>FF3usME</B></FONT><br>
+This is a multi-function program used for the English version of FF6.<br>
+You can easily edit various parts of the data such as monster, magic, character data, monster formations, etc.<br>
+Although it's made for the English version of FF6, the Japanese version also works with it. However, please note that it can't be used with expanded ROM files of FF6.<br>
+<br>
+<DIV ALIGN="right">Lord J's Website（<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>）</DIV>
+<FONT SIZE="3"><B>FF3se</B></FONT><br>
+This is a graphic editor for the English version of FF6.<br>
+You can edit monster, Eidolons, menu, and character sprites.<br>
+Since it's made for the English FF6, to use the Japanese version <b><font COLOR="red">fill 200 bytes from the start with 00</font></b> (requires a header).<br>
+<br>
+<DIV ALIGN="right">Lord J's Website（<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>）</DIV>
+
+
+<br>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+<br>
+</span>
+</td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<DIV ALIGN="right">Final Fantasy VI T-Edition. Mod Creator: Tsushiy◆KEHt9L6ti47L</DIV>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
