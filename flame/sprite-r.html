@@ -1,20 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-	<style type="text/css">
-		<!--
-			td	{
-				font-size:small;
-				}
-			td#large	{
-				font-size:medium;
-				}
-			a#siro:link	{	color:#ffffff;	}
-			a#siro:visited	{	color:#ffffff;	}
-			a#siro:active	{	color:#bbffbb;	}
-		-->
-body,td,th {font-family:'ÉqÉâÉMÉmäpÉS Pro W3', 'Hiragino Kaku Gothic Pro', ÉÅÉCÉäÉI, Meiryo, 'ÇlÇr ÇoÉSÉVÉbÉN', sans-serif;font-size:14px;}
-	</style>
+    <meta charset="UTF-8">
+    <title>Your Page Title Here</title>  <!-- Add a title! -->
+    <style>
+        /* Remove the deprecated comment-style CSS */
+        div {
+            letter-spacing: 0.1em;
+        }
+
+        a#siro:link,
+        a#siro:visited {
+            color: #ffffff;
+        }
+
+        a#siro:active {
+            color: #bbffbb;
+        }
+
+        /*  Corrected CSS: Use a single rule for body, td, and th */
+        body, td, th {
+            font-family: 'Hiragino Kaku Gothic Pro W3', 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+            font-size: 14px;
+        }
+    </style>
 
 <script Language=javascript>
 <!--
@@ -35,16 +44,16 @@ objID.className='close';
 </head>
 
 <body>
-<a name="top">Å@</a><br>
-<FONT SIZE="5" COLOR="#323232">About Character Images (ÉLÉÉÉâÉNÉ^Å[âÊëúÇ…Ç¬Ç¢Çƒ)</FONT><br>
+<a name="top">„ÄÄ</a><br>
+<FONT SIZE="5" COLOR="#323232">About Character Images („Ç≠„É£„É©„ÇØ„Çø„ÉºÁîªÂÉè„Å´„Å§„ÅÑ„Å¶)</FONT><br>
 <HR color="blue">
 <br>
 
 <DIV ALIGN="right">Last Updated: 2/5/2021</DIV>
-<DIV ALIGN="right">Version: 2.9.4<br>EXÅF 1.6.3</DIV>
+<DIV ALIGN="right">Version: 2.9.4<br>EXÔºö 1.6.3</DIV>
 
 <br>
-<a name="1">Å@</a>
+<a name="1">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -66,7 +75,7 @@ There's a specific program available to create or edit sprites. I'll explain bel
 <br>
 
 <br>
-<a name="2">Å@</a>
+<a name="2">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -82,7 +91,7 @@ There's a specific program available to create or edit sprites. I'll explain bel
 If you wish to edit the original sprites in FF6 the program <B>YY-CHR</B> may be a good choice.<br><br>
 Firstly, open the ROM in <B>YY-CHR</B> and display the address for the image you wish to edit. Character sprites can be separated into <B>Field</B> and <B>Battle</B>. In the original game there was only one set of sprites used, however in FF6 T-Edition there are 2 sets I have to mess with. For more details please check (<a HREF="#6" STYLE="text-decoration:none">6. FF6 Specifications</a>).<br>
 <br>
-In both the original game and FF6 T-Edition character images are located at address <B>150000Å`</B>. However, since the address of FF6 T-Edition is different depending on the character, please use the BNE 2 settings file attached with the files downloaded here and open the sprite tab on BNE 2.<br>
+In both the original game and FF6 T-Edition character images are located at address <B>150000ÔΩû</B>. However, since the address of FF6 T-Edition is different depending on the character, please use the BNE 2 settings file attached with the files downloaded here and open the sprite tab on BNE 2.<br>
 <br>
 Character sprites are displayed, but the colors are messed up and it's extremely annoying. The files <B>FF6 T-Edition character palettes.pal</B> and <B>original ff6 character palettes.pal</B> are included in the attached "For Producers" folder so please use them by opening the Palette>RGB Palette (*.pal) in the upper menu. Please use the one necessary for whatever you're doing.<br><br>
 In the lower right part of the palette select what color fits that specific character that you'd like. Doing this will make it appear in the same color as in the game so it'll be easier to edit.<br>
@@ -97,7 +106,7 @@ For detailed use in using <B>YY-CHR</B> please refer to the attached "Readme" fi
 <br>
 
 <br>
-<a name="3">Å@</a>
+<a name="3">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -126,7 +135,7 @@ Please note that there are some places where the output images are shared, mirro
 <br>
 
 <br>
-<a name="4">Å@</a>
+<a name="4">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -159,7 +168,7 @@ In a binary editor such as the program <B>Stirling</B>, to find out what charact
 <br>
 
 <br>
-<a name="5">Å@</a>
+<a name="5">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -183,7 +192,7 @@ FF3usME can't be used if the ROM has been expanded for FF6 due to the image addr
 <br>
 
 <br>
-<a name="6">Å@</a>
+<a name="6">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -242,7 +251,7 @@ Just like you may do with FF6 T-Edition, if you make a battle sprite with a diff
 <br>
 
 <br>
-<a name="7">Å@</a>
+<a name="7">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -258,7 +267,7 @@ Just like you may do with FF6 T-Edition, if you make a battle sprite with a diff
 If you want to change the portraits on the menu screen you can easily do this with the programs <b>FF3se</b> and <b>YY-CHR</b>.<br><br>
 However, <b>FF3se</b> can only be used for certain headers due to being an English program. To use the original Japanese FF6 without headers you must <b><font COLOR="red">fill the first 200 bytes with 00</font></b>.<br>
 <br>
-The portrait specifications are <b><font COLOR="red">40Å~40</font></b> and the number of colors are <b><font COLOR="red">16</font></b>. One palette can be set per image.<br>
+The portrait specifications are <b><font COLOR="red">40√ó40</font></b> and the number of colors are <b><font COLOR="red">16</font></b>. One palette can be set per image.<br>
 <br>
 <center><IMG SRC="img/6.png" STYLE="margin-right:10px;"></center>
 <br>
@@ -274,7 +283,7 @@ If you're editing sprites from the original FF6 game then your work is done. How
 </table>
 <br>
 
-<a name="8">Å@</a>
+<a name="8">„ÄÄ</a>
 <table border=0 width=850 bgcolor="#FED0F2" align=center HEIGHT="50">
 <tr>
 <td width="100%">
@@ -293,37 +302,37 @@ The following are useful programs for editing character images.<br>
 This is a program that can browse and edit images used in NES and SNES.<br>
 This can also be used not only for character images, but also magic effects and monster images.<br>
 <br>
-<DIV ALIGN="right">ÇÌÇ¢ÇÌÇ¢ÇÃëÉÅi<A HREF="http://www.geocities.jp/yy_6502/">http://www.geocities.jp/yy_6502/</A>Åj</DIV>
+<DIV ALIGN="right">„Çè„ÅÑ„Çè„ÅÑ„ÅÆÂ∑£Ôºà<A HREF="http://www.geocities.jp/yy_6502/">http://www.geocities.jp/yy_6502/</A>Ôºâ</DIV>
 <br>
 <FONT SIZE="3"><B>Stirling</B></FONT><br>
 An easy-to-use binary editor.<br>
 It's excellent to use when referring to event contents and other things, even with graphics.<br>
 <br>
-<DIV ALIGN="right">Vector - StirlingÅi<A HREF="http://www.vector.co.jp/soft/win95/util/se079072.html">http://www.vector.co.jp/soft/win95/util/se079072.html</A>Åj</DIV>
+<DIV ALIGN="right">Vector - StirlingÔºà<A HREF="http://www.vector.co.jp/soft/win95/util/se079072.html">http://www.vector.co.jp/soft/win95/util/se079072.html</A>Ôºâ</DIV>
 <br>
 <FONT SIZE="3"><B>BNE2</B></FONT><br>
 A program used to display fixed-length data in a table.<br>
 You can browse various data using the attached FF6 T-Edition and original FF6 settings files in the FF binary shared folder.<br>
 <br>
-<DIV ALIGN="right">âiãvUnderConstructionÅi<A HREF="http://www.geocities.jp/to_546/">http://www.geocities.jp/to_546/</A>Åj</DIV>
+<DIV ALIGN="right">Ê∞∏‰πÖUnderConstructionÔºà<A HREF="http://www.geocities.jp/to_546/">http://www.geocities.jp/to_546/</A>Ôºâ</DIV>
 <br>
 <FONT SIZE="3"><B>EDGE2</B></FONT><br>
 A very high-quality pixel editor.<br>
 <br>
-<DIV ALIGN="right">TAKABOSOFT - EDGE2Åi<A HREF="http://takabosoft.com/edge2">http://takabosoft.com/edge2</A>Åj</DIV>
+<DIV ALIGN="right">TAKABOSOFT - EDGE2Ôºà<A HREF="http://takabosoft.com/edge2">http://takabosoft.com/edge2</A>Ôºâ</DIV>
 <br>
 <FONT SIZE="3"><B>FF3usME</B></FONT><br>
 This is a multi-function program used for the English version of FF6.<br>
 You can easily edit various parts of the data such as monster, magic, character data, monster formations, etc.<br>
 Although it's made for the English version of FF6, the Japanese version also works with it. However, please note that it can't be used with expanded ROM files of FF6.<br>
 <br>
-<DIV ALIGN="right">Lord J's WebsiteÅi<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>Åj</DIV>
+<DIV ALIGN="right">Lord J's WebsiteÔºà<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>Ôºâ</DIV>
 <FONT SIZE="3"><B>FF3se</B></FONT><br>
 This is a graphic editor for the English version of FF6.<br>
 You can edit monster, Eidolons, menu, and character sprites.<br>
 Since it's made for the English FF6, to use the Japanese version <b><font COLOR="red">fill 200 bytes from the start with 00</font></b> (requires a header).<br>
 <br>
-<DIV ALIGN="right">Lord J's WebsiteÅi<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>Åj</DIV>
+<DIV ALIGN="right">Lord J's WebsiteÔºà<A HREF="http://www.angelfire.com/pq/jumparound/">http://www.angelfire.com/pq/jumparound/</A>Ôºâ</DIV>
 
 
 <br>
@@ -373,7 +382,7 @@ Since it's made for the English FF6, to use the Japanese version <b><font COLOR=
 <br>
 <br>
 <br>
-<DIV ALIGN="right">Final Fantasy VI T-Edition. Mod Creator: TsushiyÅüKEHt9L6ti47L</DIV>
+<DIV ALIGN="right">Final Fantasy VI T-Edition. Mod Creator: Tsushiy‚óÜKEHt9L6ti47L</DIV>
 <br>
 
 
